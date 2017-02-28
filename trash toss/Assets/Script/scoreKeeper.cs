@@ -13,7 +13,7 @@ public class scoreKeeper : MonoBehaviour {
 
     void Update()
     {
-        if (score == 3)
+        if (score == 10)
         {
             levelManager.LoadNextScene();
         }

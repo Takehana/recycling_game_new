@@ -21,7 +21,7 @@ public class throwTrash : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = false;
         rb.AddForce(force * multiplier);
-        Destroy(transform.parent.gameObject, destroyTime);
+        Destroy(gameObject, destroyTime);
     }
 
     /*void OnMouseDrag()
@@ -37,7 +37,7 @@ public class throwTrash : MonoBehaviour {
         if(coll.gameObject.tag == "recycle")
         {
             scoreKeeper.score += 1;
-            Destroy(transform.parent.gameObject);
+            Destroy(gameObject);
         }
     }
 }

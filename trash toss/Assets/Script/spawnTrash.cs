@@ -10,7 +10,7 @@ public class spawnTrash : MonoBehaviour {
     public void spawn()
     {
         Vector3 spawnSpot = GameObject.Find("spawn spot").transform.position;
-        int caseSwitch = rng.Next(1, 3);
+        int caseSwitch = rng.Next(1, 2);
         switch (caseSwitch)
         {
             case 1:
